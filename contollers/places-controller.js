@@ -12,6 +12,7 @@ const getPlaceById = async (req, res, next) => {
   const placeId = req.params.pid;
 
   let place;
+  
 
   try {
     place = await Place.findById(placeId);
